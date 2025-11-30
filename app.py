@@ -19,7 +19,7 @@ if "email" not in st.session_state:
     st.session_state.email = ""
 
 if not st.session_state.started:
-    st.title("여행추천 챗봇에 오신 걸 환영해!")
+    st.title("여행추천 챗봇입니다")
     st.session_state.email = st.text_input("이메일을 입력해주세요:")
     if st.button("시작"):
         if st.session_state.email:
