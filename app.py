@@ -11,10 +11,9 @@ st.set_page_config(
     layout="wide"
 )
 
-# 좌측 사이드바 로고
 with st.sidebar:
-    img = Image.open(r"C:\Users\yujeo\Desktop\Fitlab.png")
-    st.image(img, width=80)
+    img = Image.open("Fitlab.png")  # 절대 경로 대신 파일명만
+    st.sidebar.image(img, caption="Fitlab", use_column_width=True)
     st.markdown("## 여행추천 챗봇")
     st.markdown("---")
 
