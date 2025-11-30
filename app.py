@@ -68,4 +68,4 @@ for msg in st.session_state.messages[1:]:  # 시스템 메시지는 제외
     if msg["role"] == "user":
         st.markdown(f"**You:** {msg['content']}")
     elif msg["role"] == "assistant":
-        st.markdown(f"**친구:** {msg['content']}")
+        st.markdown(f"**Chatbot:** {msg['content']}")
